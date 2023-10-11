@@ -11,7 +11,8 @@ systemctl enable php7.4-fpm
 systemctl enable nginx
 cd /etc/nginx/sites-enabled/
 cp default /home/user1/
-#nano pihole
+#nano pihole 
+cp `find $HOME -name ubuntu-22.04  2>/dev/null`/pihole pihole
 htpasswd -c /etc/nginx/.htpasswd user1
 chown -R www-data:www-data /var/www/html
 chmod -R 755 /var/www/html
