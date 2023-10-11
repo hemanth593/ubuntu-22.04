@@ -3,7 +3,7 @@ server {
     listen [::]:80 default_server;
 
     root /var/www/html;
-    server_name pihole.qovic.com;
+    server_name "YOUR SERVER DOMAIN";
     autoindex off;
 
     index pihole/index.php index.php index.html index.htm;
